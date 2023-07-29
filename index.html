@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dom Manipulation</title>
 </head>
 <body>
-    
+    <h1>Window Object</h1>
+
+    <button onclick="objAlert()">Alert</button>
+    <button onclick="objConfirm()">Confirm</button>
+    <button onclick="objPrompt()">Prompt</button>
+    <button onclick="objOpen()">Open</button>
+    <button onclick="objClose()">Close</button>
+
+    <script>
+        function objAlert(){
+            alert("Save Success");
+        }
+        function objConfirm(){
+            let result = confirm("Do you want to delete?");
+            document.write(result);
+        }
+        function objPrompt(){
+            let result = prompt("Write your name");
+            document.write(result);
+
+        }
+        function objOpen(){
+            open();
+        }
+        function objClose(){
+            close();
+        }
+
+        setTimeout(function(){
+            alert("Alert After 5 Sec");
+        },5000);
+    </script>
 </body>
 </html>
