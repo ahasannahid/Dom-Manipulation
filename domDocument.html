@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Documents</title>
+</head>
+
+<body>
+    <h1>Dom Documents</h1>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+    <!-- <p></p> -->
+    <button onclick="demo()">Click</button>
+
+    <script>
+        function demo() {
+            // var info = document.cookie;
+            // var info = document.domain;
+            // var info = document.lastModified;
+            // var info = document.title;
+            // var info = document.URL;
+            // document.getElementsByTagName('p')[0].innerHTML= info;
+
+
+            // replace document
+            /*document.open('text/html', 'replace');
+            document.write("<h2>Ahasan Habib</h2>");
+            document.close();
+            */
+
+            // open new window
+            /*
+            var w = window.open();
+            w.document.open();
+            w.document.write("<h2>Ahasan Habib Nahid from new window</h2>");
+            w.document.close();
+            */ 
+
+
+            // count element
+            let myItems = document.getElementsByTagName('p');
+
+            let itemCount = myItems.length;
+            alert(itemCount);
+
+        }
+    </script>
+</body>
+
+</html>
